@@ -1,5 +1,56 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+ width: 375px;
 }
+
+.header {
+ padding: 10px; /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-image: url(../images/cover-image-dark.png);
+}
+
+.header__decorated-element{
+  position:absolute;
+  right: 10px;
+  top: 10px;;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+.header__decorated-element::before {
+  content: 'rec';
+  font-family: var(--font-text, 'IBM Plex mono'), sans-serif;
+  color: var(--accent-color, #ff0070);
+  text-transform: uppercase;
+  
+}
+
+.header__decorated-element::after {
+  content: '';
+  display: block;
+  inline-size: 9px;
+  block-size: 9px;
+  background-color: var(--accent-color, #ff0070);
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px  var(--accent-color, #ff0070);
+}
+
+.title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
+  color: var(--title-text-color, #db00ff);
+  font-weight: var(--text-bold, bold);
+  font-family: var(--font-text, 'IBM Plex mono');
+  line-height: 83%;
+}
+
+
+  
+  
+
