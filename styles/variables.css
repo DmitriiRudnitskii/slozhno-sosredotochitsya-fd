@@ -4,10 +4,13 @@
 */
 :root {
   --title-text-color :#db00ff;
+  --title-decor-text-color: #000028;
   --accent-color: #ff0070;
   --text-size: 1.125rem;
   --font-text: 'IBM Plex mono';
   --text-bold: bold;
   --text-normal: normal;
+  --page-padding: 10px;
+  --page-gap: 10px;
   
 }
