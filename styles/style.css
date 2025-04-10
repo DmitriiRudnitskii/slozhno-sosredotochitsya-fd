@@ -1,10 +1,11 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  display: grid;
-  position: relative;
-  grid-template-columns: 1fr;
- width: 375px;
+  width: 375px;
+  background-image: var(--bg-page, url(../images/cover-image-dark.png));
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
@@ -14,7 +15,6 @@
   block-size: 668px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  background-image: url(../images/cover-image-dark.png);
 }
 
 .decorated-zone {
@@ -95,7 +95,7 @@
   flex-direction: column;
   gap: var(--page-gap, 10px);
   align-self: end;
-  margin-block-start: 9.5px;
+  margin-block-start: 8.5px;
 }
 
 .header__theme-menu-button {
@@ -128,20 +128,26 @@
 .title-decor{
   background-color: var(--accent-color);
   color: var(--title-decor-text-color, #000026);
+  font-family: var(--font-text);
+  font-weight: var(--text-bold);
+  font-size: var(--text-size, 18px);
+  line-height: 1.31;
 }
 
 .header__title__description {
   grid-row-start: 3;
   display: block;
-  font-family: var(--font-text);
-  font-weight: var(--text-bold);
-  font-size: var(--text-size, 18px);
-  line-height: 1.31;
   justify-self: start;
   align-self: center;
   margin-block-end: 13px;
 }
-  
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: var(--page-padding);
+}
+
 
 
 
