@@ -11,7 +11,11 @@
   --text-bold: bold;
   --text-normal: normal;
   --page-padding: 10px;
-  --page-gap: 10px;
-  --bg-page: url(../images/cover-image-dark.png);  
+  --page-gap: 20px;
+  --text-gap: 10px;
+  --bg-page: url(../images/cover-image-dark.png);
+  --lh-text: 130%;
+  --margin-section-end: 30px;
+  --card-text-color: #f182ce;  
   
 }
