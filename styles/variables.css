@@ -19,3 +19,9 @@
   --margin-section-end: 30px;
   --card-text-color: #f182ce;
 }
+@media (width >= 768px) {
+  :root {
+    --page-padding: 20px;
+    --margin-section-end: 40px;
+  }
+}

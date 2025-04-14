@@ -53,6 +53,10 @@
   border: 1px solid var(--decorate-elements-color);
 }
 
+.theme-light .header__theme-menu-button_active{
+  border: 1px solid var(--decorate-elements-color);
+}
+
 .theme-light .header__theme-menu-button:hover {
   border: 1px solid #32312d66;
 }

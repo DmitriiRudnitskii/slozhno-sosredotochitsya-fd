@@ -13,7 +13,8 @@
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   padding: var(--page-padding, 10px);
   display: grid;
-  block-size: 668px;
+  block-size: 100vh;
+  min-height: 668px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   margin-block-end: var(--margin-section-end, 30px);
@@ -101,7 +102,7 @@
   width: 70px;
   height: 26px;
   background-color: transparent;
-  border: none;
+  border: 1px solid transparent;
   padding: 0 13px;
   font-size: var(--text-size, 18px);
   font-family: var(--font-text, "IBM Plex mono"), sans-serif;
@@ -236,7 +237,6 @@
 }
 
 .footer {
-  --page-padding: 13px;
   display: grid;
   padding: 0 var(--page-padding);
   min-height: 668px;
@@ -245,18 +245,13 @@
 .footer__title {
   display: block;
   text-shadow: 2px 1px 0 var(--accent-color, #ff0070);
-  justify-self: start;
+  justify-self: center;
   align-self: center;
 }
 
 @media (width >= 768px) {
-  :root {
-    --page-padding: 20px;
-    --margin-section-end: 40px;
-  }
-
   .header {
-    block-size: 1024px;
+    min-height: 1024px;
     padding: var(--page-padding);
     padding-inline-start: 0;
     grid-template-rows: 443px 1fr 443px;
@@ -299,25 +294,25 @@
     margin-block-end: var(--margin-section-end);
   }
 
-  .grid-container:nth-child(2) {
+  .reasons {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: repeat(2, min-content);
   }
 
-  .grid-container:nth-child(2) > .content__card-title {
+  .reasons > .content__card-title {
     grid-column: 1;
   }
 
-  .grid-container:nth-child(2) > .content__card {
+  .reasons > .content__card {
     grid-column: span 2;
   }
 
-  .grid-container:nth-child(3) > .content__card {
+  .solutions__section > .content__card {
     grid-column: 2;
     grid-template-rows: repeat(2, min-content);
   }
 
-  .grid-container:last-child {
+  .gallery {
     grid-template-columns: 1fr;
   }
 
@@ -355,7 +350,7 @@
   }
 
   .footer {
-    block-size: 1024px;
+    min-height: 1024px;
   }
 
   .footer__title {
@@ -365,7 +360,7 @@
 
 @media (width >= 1024px) {
   .header {
-    block-size: 768px;
+    min-height: 768px;
     grid-template-rows: 299px 1fr 299px;
   }
 
@@ -396,6 +391,6 @@
   }
 
   .footer {
-    block-size: 768px;
+    min-height: 768px;
   }
 }
