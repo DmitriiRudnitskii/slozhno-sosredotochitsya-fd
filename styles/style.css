@@ -327,25 +327,25 @@
     object-fit: cover;
   }
 
-  .content__image:first-child {
+  .sunset {
     grid-column: span 2;
   }
 
-  .content__image:nth-child(2) {
+  .ice-cream {
     grid-column: 3;
     grid-row: span 2;
   }
 
-  .content__image:nth-child(3) {
+  .tape {
     grid-column: 1;
     grid-row: span 2;
   }
-  .content__image:nth-child(4) {
+  .books {
     grid-column: 2;
     grid-row: 2;
   }
 
-  .content__image:nth-child(5) {
+  .street {
     grid-column: span 2;
   }
 
@@ -385,9 +385,13 @@
     grid-template-columns: 315px 1fr;
   }
 
-  .grid-container:nth-child(2) > .content__card > .content__card-list {
+  .reasons > .content__card > .content__card-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
   }
 
   .footer {
