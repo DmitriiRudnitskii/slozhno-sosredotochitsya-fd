@@ -3,11 +3,11 @@
   и их переопределение под различные устройства
 */
 :root {
-  --title-text-color :#db00ff;
+  --title-text-color: #db00ff;
   --title-decor-text-color: #000028;
   --accent-color: #ff0070;
   --text-size: 1.125rem;
-  --font-text: 'IBM Plex mono';
+  --font-text: "IBM Plex mono";
   --text-bold: bold;
   --text-normal: normal;
   --page-padding: 10px;
@@ -16,6 +16,5 @@
   --bg-page: url(../images/cover-image-dark.png);
   --lh-text: 130%;
   --margin-section-end: 30px;
-  --card-text-color: #f182ce;  
-  
+  --card-text-color: #f182ce;
 }
