@@ -113,6 +113,17 @@
 .header__theme-menu-button:active {
   border: 1px solid var(--accent-color) ;
 }
+.header__theme-menu-button:hover {
+  border: 1px solid #ff007066;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid var(--accent-color);
+}
 
 .header__title {
   grid-row: 2;
@@ -160,7 +171,7 @@
   font-size: var(--text-size);
   font-weight: var(--text-bold);
   color: var(--accent-color);
-  line-height: var(--lh, 130%);
+  line-height: var(--lh-text, 130%);
 }
 
 .card-text {
@@ -176,6 +187,14 @@
   text-decoration: none;
 }
 
+.content__link:hover {
+  border-block-end: 1px solid var(--card-text-color);
+}
+
+.content__link:focus {
+  outline: 1px solid var(--card-text-color);
+}
+
 .content__card-list {
   display: flex;
   flex-direction: column;
@@ -185,13 +204,13 @@
 .content__card-list-item {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--text-gap);
 }
 
 .content__card {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--page-gap);
 }
 
 .solutions {
