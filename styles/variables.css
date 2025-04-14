@@ -18,6 +18,10 @@
   --lh-text: 130%;
   --margin-section-end: 30px;
   --card-text-color: #f182ce;
+  --decorate-elements-color: #ff0070;
+  --button-hover: #ff007066;
+  --shadow-color: #ff0070;
+  --display-decorated-element: flex;
 }
 @media (width >= 768px) {
   :root {
