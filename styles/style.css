@@ -91,15 +91,17 @@
   justify-self: end;
   display: flex;
   flex-direction: column;
-  gap: var(--text-gap, 10px);
+  gap: 10px;
   align-self: end;
   margin-block-start: 8.5px;
 }
 
 .header__theme-menu-button {
+  width: 70px;
+  height: 26px;
   background-color: transparent;
   border: none;
-  padding: 2px 13px;
+  padding: 0 13px;
   font-size: var(--text-size, 18px);
   font-family: var(--font-text, "IBM Plex mono"), sans-serif;
   text-transform: lowercase;
@@ -124,6 +126,7 @@
 
 .header__theme-menu-button_active {
   pointer-events: none;
+  border: 1px solid var(--accent-color);
 }
 
 .header__title {
