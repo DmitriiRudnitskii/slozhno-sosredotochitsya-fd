@@ -201,6 +201,12 @@
   outline: 1px solid var(--card-text-color);
 }
 
+.content__card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--page-gap);
+}
+
 .content__card-list {
   display: flex;
   flex-direction: column;
