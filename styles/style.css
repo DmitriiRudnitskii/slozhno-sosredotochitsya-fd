@@ -39,7 +39,7 @@
   display: block;
   min-height: 26px;
   min-width: 33px;
-  font-family: var(--font-text, "IBM Plex mono"), sans-serif;
+  font-family: var(--font-text, "IBM Plex mono"), "Arial", sans-serif;
   color: var(--accent-color, #ff0070);
   font-size: var(--text-size, 18px);
   line-height: 1.39;
@@ -105,7 +105,7 @@
   border: 1px solid transparent;
   padding: 0 13px;
   font-size: var(--text-size, 18px);
-  font-family: var(--font-text, "IBM Plex mono"), sans-serif;
+  font-family: var(--font-text, "IBM Plex mono"), "Arial", sans-serif;
   text-transform: lowercase;
   color: var(--decorate-elements-color);
   align-self: center;
@@ -143,14 +143,14 @@
   text-shadow: 4px 4px 0 var(--accent-color);
   color: var(--title-text-color, #db00ff);
   font-weight: var(--text-bold, bold);
-  font-family: var(--font-text, "IBM Plex mono");
+  font-family: var(--font-text, "IBM Plex mono"), "Arial", sans-serif;
   line-height: 0.83;
 }
 
 .title-decor {
   background-color: var(--accent-color);
   color: var(--title-decor-text-color, #000026);
-  font-family: var(--font-text);
+  font-family: var(--font-text), "Arial", sans-serif;
   font-weight: var(--text-bold);
   font-size: var(--text-size, 18px);
   line-height: var(--lh-text, 130%);
@@ -173,7 +173,7 @@
 }
 
 .card-title-decor {
-  font-family: var(--font-text);
+  font-family: var(--font-text), "Arial", sans-serif;
   font-size: var(--text-size);
   font-weight: var(--text-bold);
   color: var(--decorate-elements-color);
@@ -181,7 +181,7 @@
 }
 
 .card-text {
-  font-family: var(--font-text);
+  font-family: var(--font-text), "Arial", sans-serif;
   font-size: var(--text-size);
   line-height: var(--lh-text);
   font-weight: var(--text-normal);
@@ -211,12 +211,6 @@
   display: flex;
   flex-direction: column;
   gap: var(--text-gap);
-}
-
-.content__card {
-  display: flex;
-  flex-direction: column;
-  gap: var(--page-gap);
 }
 
 .solutions {
@@ -303,11 +297,11 @@
     grid-column: 1;
   }
 
-  .reasons > .content__card {
+  .reasons > .content__card-list {
     grid-column: span 2;
   }
 
-  .solutions__section > .content__card {
+  .solutions__section > .content__card-list {
     grid-column: 2;
     grid-template-rows: repeat(2, min-content);
   }
@@ -385,7 +379,7 @@
     grid-template-columns: 315px 1fr;
   }
 
-  .reasons > .content__card > .content__card-list {
+  .reasons > .content__card-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
